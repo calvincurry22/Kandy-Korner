@@ -5,7 +5,7 @@ import "./Location.css"
 
 
 
-export default ({ location }) => {
+export default () => {
     const { locations } = useContext(LocationContext)
 
 
@@ -13,7 +13,7 @@ export default ({ location }) => {
         <>
             <h3>Locations</h3>
             
-            <div className="location__container">
+            <div className="locationContainer">
                 {
                     locations.map(locationObj => {
                         return <Location key={locationObj.id} location={locationObj} />
