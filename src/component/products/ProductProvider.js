@@ -44,7 +44,7 @@ export const ProductProvider = (props) => {
         })
             .then(getProductTypes)
     }
-
+    
     useEffect( () => {
         getProductTypes().then(getProducts)
     }, [])
